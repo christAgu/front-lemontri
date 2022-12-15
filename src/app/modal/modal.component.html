@@ -31,17 +31,12 @@
       <p><strong><span class="text-primary">{{ text2 }}</span></strong></p>
     </div>
 
-  
+
   </div>
 
   <p>
-    {{ interdit }}
-    <span class="text-danger">.</span>
-  </p>
-  <p>
-    <strong
-      ><span class="text-primary">{{ text }}</span></strong
-    >
+    Attention a ne pas mettre :
+    <span class="text-danger">{{ interdit }}</span>
   </p>
 
   <div *ngIf="cycleVerifClick === true; then bloc1"></div>

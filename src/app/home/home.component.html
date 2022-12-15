@@ -1,4 +1,4 @@
-<div>
+<div class="bg-light">
   <header
     class="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 text-slate-700 md:mx-auto md:flex-row md:items-center">
     <a href="#" class="flex cursor-pointer items-center whitespace-nowrap text-2xl font-black">
@@ -20,8 +20,8 @@
       <ul class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
         <li class="font-bold md:mr-12"><a href="#">Pricing</a></li>
         <li class="md:mr-12"><a href="#">Features</a></li>
-        <li class="md:mr-12"><a (click)="goTo()" >consigne</a></li>
-       
+        <li class="md:mr-12"><a (click)="goTo()">consigne</a></li>
+
 
         <li class="md:mr-12">
           <button
@@ -35,7 +35,7 @@
 
     <img src="assets/images/bulle.jpg" class="absolute inset-0 h-full w-full object-cover" alt="" />
     <div class="relative bg-emerald-700 bg-opacity-70">
-      <svg class="absolute inset-x-0 -bottom-1 text-white" viewBox="0 0 1160 163">
+      <svg class="absolute inset-x-0 -bottom-1 text-green-primary" viewBox="0 0 1160 163">
         <path fill="currentColor"
           d="M-164 13L-104 39.7C-44 66 76 120 196 141C316 162 436 152 556 119.7C676 88 796 34 916 13C1036 -8 1156 2 1216 7.7L1276 13V162.5H1216C1156 162.5 1036 162.5 916 162.5C796 162.5 676 162.5 556 162.5C436 162.5 316 162.5 196 162.5C76 162.5 -44 162.5 -104 162.5H-164V13Z">
         </path>
@@ -45,12 +45,12 @@
         <div class="flex flex-col items-center justify-between xl:flex-row">
           <div class="mb-12 w-full max-w-xl xl:mb-0 xl:w-7/12 xl:pr-16">
             <h2
-              class="mb-6 max-w-lg font-sans text-3xl font-bold tracking-tight text-white sm:text-7xl sm:leading-none">
+              class="mb-6 max-w-lg font-sans text-5xl font-bold tracking-tight text-white sm:text-7xl sm:leading-none  shadow-slate-900 drop-shadow-lg">
               Lutter contre l’enfouissement et l’incinération des déchets</h2>
 
-            <a aria-label=""
+            <a aria-label="" (click)="goTo()"
               class="inline-flex items-center font-semibold tracking-wider text-teal-400 transition-colors duration-200 hover:text-teal-300">
-              Consignes
+              Découvrir les consignes
               <svg class="ml-2 inline-block w-3" fill="currentColor" viewBox="0 0 12 12">
                 <path
                   d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z">
@@ -58,8 +58,8 @@
               </svg>
             </a>
           </div>
-          <div class="relative">
-            <img class="w-full max-w-xs mx-auto xl:max-w-sm" src="assets/images/22.png" alt="" />
+          <div class="w-100">
+            <img class="w-full  mx-auto" src="assets/images/22.png" alt="" />
           </div>
         </div>
       </div>
@@ -73,105 +73,66 @@
 
 <!-- // midle -->
 
-<section class="py-12 bg-white sm:py-16 lg:py-20">
-  <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="grid items-center max-w-5xl grid-cols-1 mx-auto gap-y-12 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
-          <div class="lg:order-last">
-              <img class="w-full max-w-sm mx-auto lg:max-w-none" src="/assets/images/Tri - zéro déchet.png" alt="" />
-          </div>
-
-          <div class="max-w-md mx-auto text-center lg:max-w-none lg:mx-0 lg:text-left">
-              <h2 class="text-xs font-bold tracking-wide text-indigo-600 uppercase"></h2>
-              <p class="mt-6 text-4xl font-bold text-gray-900">Adoptons les bons <span class="text-yellow-300">zestes</span> </p>
-              <p class="mt-6 text-base font-medium text-gray-700">Tri - Vive le tri - Cash Invetrigation</p>
-              <div class="mt-10">
-                  <a href="#" title=""
-                      class="relative inline-flex items-center justify-center py-3 pl-16 pr-8 text-base font-bold text-gray-900 transition-all duration-200 bg-transparent border border-gray-900 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 hover:text-white"
-                      role="button">
-                      <div class="absolute inset-y-0 left-0 flex items-center pl-4">
-                          <svg class="w-8 h-8" viewBox="0 0 90 90" fill="currentColor"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                  d="M22.2011 46.512L22.3952 46.2069L34.1015 27.8939C34.2726 27.6257 34.6748 27.6535 34.8043 27.9447C36.7599 32.3277 38.4475 37.7786 37.6569 41.1721C37.3194 42.5683 36.3947 44.4593 35.3544 46.2069C35.2204 46.4612 35.0724 46.7109 34.9152 46.9513C34.8413 47.0622 34.7164 47.127 34.5823 47.127H22.5432C22.2195 47.127 22.03 46.7756 22.2011 46.512Z" />
-                              <path
-                                  d="M74.38 49.9149V52.8137C74.38 52.9801 74.2783 53.1281 74.1303 53.1928C73.2242 53.5812 70.1219 55.0052 68.832 56.799C65.5402 61.3807 63.0251 67.932 57.4031 67.932H33.9489C25.6362 67.932 18.9 61.1727 18.9 52.8322V52.564C18.9 52.3421 19.0803 52.1618 19.3022 52.1618H32.377C32.6359 52.1618 32.8255 52.4022 32.8024 52.6565C32.7099 53.5072 32.8671 54.3764 33.2693 55.167C34.046 56.7435 35.655 57.7283 37.3933 57.7283H43.866V52.675H37.4673C37.139 52.675 36.9449 52.2959 37.1344 52.0277C37.2038 51.9214 37.2824 51.8104 37.3656 51.6856C37.9712 50.8257 38.8358 49.4895 39.6957 47.9684C40.2829 46.9421 40.8516 45.8463 41.3093 44.746C41.4018 44.5472 41.4757 44.3438 41.5497 44.1449C41.6745 43.7936 41.804 43.4653 41.8964 43.1371C41.9889 42.8597 42.0629 42.5684 42.1369 42.2956C42.3542 41.3617 42.4466 40.3723 42.4466 39.3459C42.4466 38.9437 42.4281 38.523 42.3911 38.1207C42.3727 37.6815 42.3172 37.2423 42.2617 36.8031C42.2247 36.4147 42.1554 36.031 42.0814 35.6288C41.9889 35.0416 41.8595 34.4591 41.7115 33.8719L41.6607 33.65C41.5497 33.2478 41.4572 32.864 41.3278 32.4618C40.9625 31.1996 40.5418 29.9698 40.098 28.8186C39.9362 28.3609 39.7512 27.9217 39.5663 27.4825C39.2935 26.8213 39.0161 26.2203 38.7618 25.6516C38.6324 25.3927 38.5214 25.1569 38.4105 24.9165C38.2856 24.6437 38.1562 24.371 38.0267 24.112C37.9343 23.9132 37.8279 23.7283 37.7539 23.5434L36.9634 22.0824C36.8524 21.8836 37.0373 21.6478 37.2546 21.7079L42.2016 23.0487H42.2155C42.2247 23.0487 42.2293 23.0533 42.234 23.0533L42.8858 23.2336L43.6025 23.437L43.866 23.511V20.5706C43.866 19.1512 45.0033 18 46.4088 18C47.1116 18 47.7496 18.2866 48.2073 18.7536C48.665 19.2206 48.9517 19.8586 48.9517 20.5706V24.935L49.4787 25.0829C49.5203 25.0968 49.5619 25.1153 49.5989 25.143C49.7284 25.2401 49.9133 25.3835 50.1491 25.5591C50.334 25.7071 50.5328 25.8874 50.7733 26.0723C51.2495 26.4561 51.8181 26.9508 52.4423 27.5194C52.6087 27.6628 52.7705 27.8107 52.9185 27.9587C53.7229 28.7076 54.6245 29.5861 55.4844 30.557C55.7248 30.8297 55.9606 31.1071 56.201 31.3984C56.4415 31.6943 56.6957 31.9856 56.9177 32.2769C57.2089 32.6652 57.5233 33.0674 57.7961 33.4882C57.9255 33.687 58.0735 33.8904 58.1983 34.0892C58.5497 34.6209 58.8595 35.1711 59.1554 35.7212C59.2802 35.9755 59.4096 36.2529 59.5206 36.5257C59.8488 37.2608 60.1078 38.0098 60.2742 38.7588C60.3251 38.9206 60.362 39.0963 60.3805 39.2535V39.2904C60.436 39.5124 60.4545 39.7482 60.473 39.9886C60.547 40.756 60.51 41.5235 60.3435 42.2956C60.2742 42.6239 60.1817 42.9336 60.0708 43.2619C59.9598 43.5763 59.8488 43.9045 59.7055 44.2143C59.4281 44.8569 59.0999 45.4996 58.7115 46.1006C58.5867 46.3225 58.4387 46.5583 58.2908 46.7802C58.129 47.016 57.9625 47.238 57.8146 47.4553C57.6112 47.7327 57.3939 48.0239 57.1719 48.2828C56.9731 48.5556 56.7697 48.8284 56.5478 49.0688C56.238 49.434 55.9421 49.7808 55.6324 50.1137C55.4474 50.331 55.2486 50.5529 55.0452 50.7517C54.8464 50.9736 54.643 51.1724 54.458 51.3573C54.1483 51.6671 53.8894 51.9075 53.6721 52.1063L53.1635 52.5733C53.0895 52.638 52.9924 52.675 52.8907 52.675H48.9517V57.7283H53.9079C55.0175 57.7283 56.0716 57.3353 56.9223 56.6141C57.2135 56.3598 58.485 55.2594 59.9876 53.5997C60.0384 53.5442 60.1031 53.5026 60.1771 53.4841L73.8668 49.5265C74.1211 49.4525 74.38 49.6467 74.38 49.9149Z" />
-                          </svg>
-                      </div>
-                      En savoir plus
-                  </a>
-              </div>
-          </div>
+<section class=" bg-primary sm:py-16 ">
+  <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 ">
+    <div class=" mx-auto  d-flex justify-center align-items-center flex-col">
+      <div class="max-w-md mx-auto text-center lg:max-w-none lg:mx-0 lg:text-left ">
+        <h2 class="text-xs font-bold tracking-wide text-indigo-600 uppercase"></h2>
+        <p class=" text-6xl font-bold text-gray-900">Adoptons les bons <span class="text-yellow-300">zestes</span> </p>
       </div>
+      <div class="col-12 col-lg-8 -m-14">
+        <img class="w-full max-w-sm mx-auto lg:max-w-none" src="/assets/images/Tri - zéro déchet.png" alt="" />
+      </div>
+      <p class=" text-4xl lg:text-6xl font-medium text-black fw-bold lg:-mt-8 text-center">Tri - Vive le tri - Cash
+        Invetrigation</p>
+
+    </div>
   </div>
 </section>
-<section class="py-12 bg-white-300 sm:py-16 lg:py-20">
+<section class="pb-12 pt-20  sm:py-16 lg:py-20   ">
+  <div class="bg-secondary  w-100 position-absolute -skew-y-12 lg:-skew-y-6  h- z-0" style="height: 160%;"></div>
   <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="text-center">
-          <h1
-              class="mt-5 text-3xl font-light leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight">
+    <div class="text-center">
+      <h1
+        class="mt-5 text-3xl font-light leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight">
+        <span class="relative inline-flex justify-center whitespace-nowrap font-bold">Nos valeurs</span>
+      </h1>
+    </div>
+
+    <section class="py-12 sm:py-16 lg:py-20 xl:py-24">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div class="max-w-xl mx-auto text-center">
 
 
-              <span class="relative inline-flex justify-center whitespace-nowrap font-bold">
-                  <svg class="absolute -bottom-8 hidden w-2/3 text-gray-400 sm:block" viewBox="0 0 490 42" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                          d="M10.6312 17.089C14.4676 17.089 18.4867 16.911 22.3231 16.733C23.9673 16.733 25.4288 16.555 27.073 16.555C34.0151 16.199 40.9571 15.8429 47.8992 15.4869C56.3028 15.1309 64.5237 14.5969 72.9272 14.2408C84.8018 13.5288 96.6764 12.9948 108.551 12.2827C111.291 12.1047 114.032 12.1047 116.772 11.9267C123.714 11.5707 130.656 11.2147 137.598 11.0366C144.54 10.6806 151.482 10.3246 158.424 10.1466C161.165 9.96859 163.905 9.79058 166.645 9.79058C177.606 9.43455 188.75 9.07853 199.712 8.72251C206.471 8.5445 213.23 8.36649 220.172 8.01047C222.913 8.01047 225.47 7.83246 228.211 7.83246C238.806 7.65445 249.585 7.47644 260.181 7.29843C270.776 7.12042 281.19 6.94241 291.785 6.7644C294.526 6.7644 297.266 6.7644 300.189 6.7644C307.131 6.7644 313.89 6.7644 320.832 6.7644C331.611 6.7644 342.207 6.7644 352.985 6.58639C356.456 6.58639 359.927 6.58639 363.398 6.58639C370.706 6.58639 378.013 6.58639 385.321 6.58639C385.869 6.58639 386.6 6.58639 387.148 6.58639C370.706 6.7644 354.081 6.94241 337.64 7.29843C330.698 7.47644 323.938 7.47644 316.996 7.65445C314.073 7.65445 310.967 7.65445 308.044 7.83246C297.997 8.01047 288.132 8.36649 278.084 8.5445C266.575 8.90052 255.065 9.07853 243.556 9.43455C241.547 9.43455 239.72 9.61256 237.71 9.61256C231.499 9.96859 225.47 10.1466 219.259 10.5026C206.836 11.0366 194.414 11.5707 181.991 12.1047C180.164 12.1047 178.337 12.2827 176.51 12.4607C170.482 12.8168 164.27 13.3508 158.242 13.7068C147.281 14.4188 136.502 15.1309 125.541 15.8429C122.618 16.0209 119.512 16.377 116.589 16.555C109.647 17.089 102.705 17.623 95.763 18.3351C86.9941 19.0471 78.0424 19.7592 69.2735 20.4712C57.0335 21.5393 44.6109 22.6073 32.3709 23.6754C29.4479 23.8534 26.5249 24.2094 23.4193 24.3874C18.1213 24.9215 12.8234 25.4555 7.52554 25.9895C6.97749 25.9895 6.42943 26.3455 6.42943 27.0576C6.42943 27.5916 6.97749 28.1257 7.52554 28.1257C9.53509 28.1257 11.362 28.3037 13.3715 28.3037C13.0061 29.1937 12.8234 29.7277 12.8234 30.2618C12.8234 32.2199 14.4676 34 16.6599 34C31.8228 33.1099 46.8031 32.0419 61.9661 31.3298C75.1195 30.7958 88.2729 30.0838 101.426 29.5497C115.859 28.8377 130.473 28.1257 144.906 27.5916C149.473 27.4136 154.04 27.2356 158.607 26.8796C159.886 26.8796 161.165 26.7016 162.626 26.7016C186.01 26.1675 209.394 25.4555 232.778 24.9215C245.2 24.5654 257.806 24.2094 270.228 24.0314C274.796 23.8534 279.18 23.8534 283.747 23.6754C307.679 23.3194 331.611 22.9634 355.543 22.6073C365.773 22.4293 376.004 22.2513 386.234 22.0733C395.003 21.8953 403.772 21.8953 412.541 21.5393C419.848 21.3613 426.973 21.0052 434.281 20.8272C437.934 20.6492 441.588 20.6492 445.059 20.4712C453.28 19.9372 461.501 19.4031 469.722 18.8691C469.174 19.5812 469.174 20.6492 469.356 21.3613C469.539 22.2513 470.087 22.9633 471.001 23.3194C471.731 23.6754 472.827 24.0314 473.558 23.6754C475.385 22.9634 477.212 22.2513 478.856 21.5393C478.856 21.5393 478.856 21.5393 478.673 21.5393C478.856 21.5393 478.856 21.3613 479.039 21.3613C479.221 21.3613 479.404 21.1832 479.404 21.1832H479.221C480.135 20.8272 481.048 20.4712 482.144 19.9372C483.058 19.5812 484.154 19.0471 485.067 18.6911C486.164 18.1571 487.077 17.623 488.173 17.089C489.269 16.555 490 15.1309 490 13.8848C490 13.1728 489.817 12.6387 489.452 11.9267C489.087 11.2147 488.173 10.3246 487.26 10.1466C486.346 9.96859 485.433 9.79058 484.519 9.79058C484.337 9.79058 484.154 9.79058 483.971 9.79058C483.423 9.79058 482.693 9.79058 482.144 9.96859C480.683 10.1466 479.404 10.3246 477.943 10.3246C476.847 10.3246 475.75 10.5026 474.472 10.5026C471.366 10.6806 468.443 10.8586 465.337 11.2147C464.607 11.2147 463.693 11.3927 462.962 11.3927C463.328 11.0366 463.51 10.6806 463.51 10.3246C463.693 9.96859 463.693 9.61257 463.693 9.25654C463.693 9.07853 463.693 8.72251 463.876 8.5445C463.876 8.18848 463.876 7.83246 463.693 7.65445C463.693 7.65445 463.876 7.65445 463.876 7.47644C464.424 7.12042 464.972 6.7644 465.337 6.05236C465.703 5.51832 465.885 4.80628 465.885 4.09424C465.885 3.3822 465.703 2.84817 465.337 2.13613C465.155 1.95812 464.972 1.60209 464.789 1.42408C464.241 0.890052 463.693 0.712042 463.145 0.534031C462.049 0.17801 460.77 0 459.491 0C458.395 0 457.482 0 456.386 0C454.924 0 453.463 0 452.001 0C449.992 0 447.799 0 445.79 0C440.309 0 434.829 0 429.348 0C424.233 0 418.935 0 413.82 0C409.07 0 404.503 0 399.753 0C380.936 0 362.302 0.17801 343.486 0.356021C329.419 0.534031 315.352 0.712042 301.285 0.712042C295.074 0.712042 288.68 0.890052 282.468 1.06806C268.402 1.42408 254.335 1.60209 240.268 1.95812C236.249 1.95812 232.23 2.13613 228.211 2.13613C225.836 2.13613 223.643 2.31414 221.268 2.31414C207.384 2.84817 193.5 3.3822 179.616 3.91623C175.414 4.09424 171.212 4.27225 166.828 4.45026C164.453 4.45026 162.078 4.62827 159.703 4.80628C145.819 5.51832 132.118 6.23037 118.233 6.94241C111.109 7.29843 103.984 7.65445 96.8591 8.18848C84.6192 8.90052 72.3792 9.61256 60.3219 10.5026C49.7261 11.2147 39.1303 11.7487 28.5345 12.2827C26.8903 12.4607 25.2461 12.4607 23.4193 12.6387C20.679 12.8168 17.9387 12.8168 15.1984 12.9948C12.8234 13.7068 10.2658 13.7068 7.89092 13.7068C7.70823 12.9948 6.97749 12.4607 6.42943 12.6387C4.78525 12.6387 3.32376 12.8168 1.67958 12.9948C0.948839 13.1728 0.218094 13.5288 0.0354073 14.2408C-0.147279 15.1309 0.40078 16.0209 1.13152 16.199C1.86227 16.377 2.59301 16.555 3.32376 16.733C4.05451 16.911 4.60256 16.911 5.33331 16.911C7.16017 17.089 8.80435 17.089 10.6312 17.089ZM438.117 11.3927C440.309 11.3927 442.684 11.3927 444.876 11.3927C445.059 11.9267 445.425 12.2827 445.79 12.6387C444.876 12.6387 443.963 12.8168 443.232 12.8168C441.588 12.8168 439.944 12.9948 438.3 12.9948C430.992 13.1728 423.868 13.5288 416.56 13.7068C413.272 13.8848 409.983 14.0628 406.695 14.0628C401.58 14.0628 396.282 14.2408 391.167 14.2408C379.292 14.4188 367.6 14.5969 355.726 14.7749C332.707 15.1309 309.871 15.4869 286.853 15.8429C270.411 16.0209 253.969 16.555 237.528 17.089C212.865 17.801 188.02 18.3351 163.357 19.0471C158.424 19.2251 153.492 19.4031 148.559 19.7592C134.493 20.4712 120.426 21.0052 106.359 21.7173C92.6573 22.4293 78.7732 22.9634 65.0717 23.6754C63.7929 23.6754 62.5141 23.8534 61.2353 23.8534C64.889 23.4974 68.7254 23.3194 72.3792 22.9633C85.3499 22.0733 98.3206 21.0052 111.291 20.1152C115.859 19.7592 120.426 19.4031 124.81 19.0471C127.185 18.8691 129.56 18.6911 131.752 18.6911C145.454 17.9791 158.972 17.089 172.491 16.377C175.049 16.199 177.789 16.0209 180.347 15.8429C184.183 15.6649 188.02 15.4869 191.673 15.4869C205.557 14.9529 219.442 14.4188 233.326 13.8848C236.431 13.7068 239.537 13.7068 242.46 13.5288C243.191 13.5288 244.104 13.5288 244.835 13.5288C247.027 13.5288 249.219 13.5288 251.229 13.3508C265.113 12.9948 279.18 12.8168 293.064 12.4607C299.458 12.2827 305.852 12.1047 312.246 12.1047C332.89 11.9267 353.716 11.7487 374.36 11.5707C395.917 11.5707 417.108 11.3927 438.117 11.3927Z"
-                          fill="currentColor" />
-                      <path
-                          d="M38 42C38.5523 42 39 41.5523 39 41C39 40.4477 38.5523 40 38 40C37.4477 40 37 40.4477 37 41C37 41.5523 37.4477 42 38 42Z"
-                          fill="currentColor" />
-                  </svg>
+        </div>
 
-                  Nos valeurs</span>
-          </h1>
-      </div>
-
-      <section class="py-12 bg-gray-50 sm:py-16 lg:py-20 xl:py-24">
-          <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-              <div class="max-w-xl mx-auto text-center">
-
-
-              </div>
-
-              <div class="grid max-w-md grid-cols-1 gap-8 mx-auto mt-12 xl:gap-16 md:max-w-5xl md:grid-cols-3 sm:mt-16">
-                  <div class="group">
-                      <a href="#" title="" class="block overflow-hidden aspect-w-16 aspect-h-9 rounded-xl">
-                          <img class="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110 group-hover:-rotate-3" src="assets/images/78.png" alt="" />
-                      </a>
-                      <h3 class="mt-6 text-lg font-semibold text-gray-900 xl:text-xl group-hover:text-gray-600">
-                          <a href="#" title="" class="">  </a>
-                      </h3>
-                      <p class="mt-3 text-sm font-medium text-blue-600">
-                          <a href="#" title="" class=""></a>
-                      </p>
-                  </div>
-
-                  <div class="group">
-                      <a href="#" title="" class="block overflow-hidden aspect-w-16 aspect-h-9 rounded-xl">
-                          <img class="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110 group-hover:-rotate-3" src="assets/images/80.png" alt="" />
-                      </a>
-                      <h3 class="mt-6 text-lg font-semibold text-gray-900 xl:text-xl group-hover:text-gray-600">
-                          <a href="#" title="" class=""> </a>
-                      </h3>
-                      <p class="mt-3 text-sm font-medium text-blue-600">
-                          <a href="#" title="" class=""></a>
-                      </p>
-                  </div>
-
-                  <div class="group">
-                      <a href="#" title="" class="block overflow-hidden aspect-w-16 aspect-h-9 rounded-xl">
-                          <img class="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110 group-hover:-rotate-3" src="assets/images/78.png" alt="" />
-                      </a>
-                      <h3 class="mt-6 text-lg font-semibold text-gray-900 xl:text-xl group-hover:text-gray-600">
-                          <a href="#" title="" class="">  </a>
-                      </h3>
-                      <p class="mt-3 text-sm font-medium text-blue-600">
-                          <a href="#" title="" class="">  </a>
-                      </p>
-                  </div>
-              </div>
+        <div class=" mx-auto mt-12  sm:mt-16 row">
+          <div class="col-12 col-md-4 ">
+            <a href="#" title="" class="block overflow-hidden aspect-w-16 aspect-h-9 rounded-xl">
+              <img
+                class="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110 group-hover:-rotate-3"
+                src="assets/images/78.png" alt="" />
+            </a>
           </div>
-      </section>
+
+          <div class="col-12 col-md-4 ">
+            <a href="#" title="" class="block overflow-hidden aspect-w-16 aspect-h-9 rounded-xl">
+              <img
+                class="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110 group-hover:-rotate-3"
+                src="assets/images/80.png" alt="" />
+            </a>
+          </div>
+
+          <div class="col-12 col-md-4 ">
+            <a href="#" title="" class="block overflow-hidden aspect-w-16 aspect-h-9 rounded-xl">
+              <img
+                class="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110 group-hover:-rotate-3"
+                src="assets/images/78.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -192,72 +153,87 @@
 
 
 
-<div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-  <div class="text-center">
-      <h1
-          class="mt-5 text-3xl font-light leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight">
+<div class="px-4 mx-auto sm:px-6 lg:px-8  bg-primary position-relative z-10  w-100">
+  <!-- <div class="bg-primary  w-100 position-absolute -skew-y-12 lg:-skew-y-6  h- z-0" style="height: 150%;"></div> -->
+
+  <div class="text-center pt-5">
+    <h1
+      class="mt-5 text-3xl font-light leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight">
 
 
-          <span class="relative inline-flex justify-center whitespace-nowrap font-bold">
-              <svg class="absolute -bottom-8 hidden w-2/3 text-gray-400 sm:block" viewBox="0 0 490 42" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                      d="M10.6312 17.089C14.4676 17.089 18.4867 16.911 22.3231 16.733C23.9673 16.733 25.4288 16.555 27.073 16.555C34.0151 16.199 40.9571 15.8429 47.8992 15.4869C56.3028 15.1309 64.5237 14.5969 72.9272 14.2408C84.8018 13.5288 96.6764 12.9948 108.551 12.2827C111.291 12.1047 114.032 12.1047 116.772 11.9267C123.714 11.5707 130.656 11.2147 137.598 11.0366C144.54 10.6806 151.482 10.3246 158.424 10.1466C161.165 9.96859 163.905 9.79058 166.645 9.79058C177.606 9.43455 188.75 9.07853 199.712 8.72251C206.471 8.5445 213.23 8.36649 220.172 8.01047C222.913 8.01047 225.47 7.83246 228.211 7.83246C238.806 7.65445 249.585 7.47644 260.181 7.29843C270.776 7.12042 281.19 6.94241 291.785 6.7644C294.526 6.7644 297.266 6.7644 300.189 6.7644C307.131 6.7644 313.89 6.7644 320.832 6.7644C331.611 6.7644 342.207 6.7644 352.985 6.58639C356.456 6.58639 359.927 6.58639 363.398 6.58639C370.706 6.58639 378.013 6.58639 385.321 6.58639C385.869 6.58639 386.6 6.58639 387.148 6.58639C370.706 6.7644 354.081 6.94241 337.64 7.29843C330.698 7.47644 323.938 7.47644 316.996 7.65445C314.073 7.65445 310.967 7.65445 308.044 7.83246C297.997 8.01047 288.132 8.36649 278.084 8.5445C266.575 8.90052 255.065 9.07853 243.556 9.43455C241.547 9.43455 239.72 9.61256 237.71 9.61256C231.499 9.96859 225.47 10.1466 219.259 10.5026C206.836 11.0366 194.414 11.5707 181.991 12.1047C180.164 12.1047 178.337 12.2827 176.51 12.4607C170.482 12.8168 164.27 13.3508 158.242 13.7068C147.281 14.4188 136.502 15.1309 125.541 15.8429C122.618 16.0209 119.512 16.377 116.589 16.555C109.647 17.089 102.705 17.623 95.763 18.3351C86.9941 19.0471 78.0424 19.7592 69.2735 20.4712C57.0335 21.5393 44.6109 22.6073 32.3709 23.6754C29.4479 23.8534 26.5249 24.2094 23.4193 24.3874C18.1213 24.9215 12.8234 25.4555 7.52554 25.9895C6.97749 25.9895 6.42943 26.3455 6.42943 27.0576C6.42943 27.5916 6.97749 28.1257 7.52554 28.1257C9.53509 28.1257 11.362 28.3037 13.3715 28.3037C13.0061 29.1937 12.8234 29.7277 12.8234 30.2618C12.8234 32.2199 14.4676 34 16.6599 34C31.8228 33.1099 46.8031 32.0419 61.9661 31.3298C75.1195 30.7958 88.2729 30.0838 101.426 29.5497C115.859 28.8377 130.473 28.1257 144.906 27.5916C149.473 27.4136 154.04 27.2356 158.607 26.8796C159.886 26.8796 161.165 26.7016 162.626 26.7016C186.01 26.1675 209.394 25.4555 232.778 24.9215C245.2 24.5654 257.806 24.2094 270.228 24.0314C274.796 23.8534 279.18 23.8534 283.747 23.6754C307.679 23.3194 331.611 22.9634 355.543 22.6073C365.773 22.4293 376.004 22.2513 386.234 22.0733C395.003 21.8953 403.772 21.8953 412.541 21.5393C419.848 21.3613 426.973 21.0052 434.281 20.8272C437.934 20.6492 441.588 20.6492 445.059 20.4712C453.28 19.9372 461.501 19.4031 469.722 18.8691C469.174 19.5812 469.174 20.6492 469.356 21.3613C469.539 22.2513 470.087 22.9633 471.001 23.3194C471.731 23.6754 472.827 24.0314 473.558 23.6754C475.385 22.9634 477.212 22.2513 478.856 21.5393C478.856 21.5393 478.856 21.5393 478.673 21.5393C478.856 21.5393 478.856 21.3613 479.039 21.3613C479.221 21.3613 479.404 21.1832 479.404 21.1832H479.221C480.135 20.8272 481.048 20.4712 482.144 19.9372C483.058 19.5812 484.154 19.0471 485.067 18.6911C486.164 18.1571 487.077 17.623 488.173 17.089C489.269 16.555 490 15.1309 490 13.8848C490 13.1728 489.817 12.6387 489.452 11.9267C489.087 11.2147 488.173 10.3246 487.26 10.1466C486.346 9.96859 485.433 9.79058 484.519 9.79058C484.337 9.79058 484.154 9.79058 483.971 9.79058C483.423 9.79058 482.693 9.79058 482.144 9.96859C480.683 10.1466 479.404 10.3246 477.943 10.3246C476.847 10.3246 475.75 10.5026 474.472 10.5026C471.366 10.6806 468.443 10.8586 465.337 11.2147C464.607 11.2147 463.693 11.3927 462.962 11.3927C463.328 11.0366 463.51 10.6806 463.51 10.3246C463.693 9.96859 463.693 9.61257 463.693 9.25654C463.693 9.07853 463.693 8.72251 463.876 8.5445C463.876 8.18848 463.876 7.83246 463.693 7.65445C463.693 7.65445 463.876 7.65445 463.876 7.47644C464.424 7.12042 464.972 6.7644 465.337 6.05236C465.703 5.51832 465.885 4.80628 465.885 4.09424C465.885 3.3822 465.703 2.84817 465.337 2.13613C465.155 1.95812 464.972 1.60209 464.789 1.42408C464.241 0.890052 463.693 0.712042 463.145 0.534031C462.049 0.17801 460.77 0 459.491 0C458.395 0 457.482 0 456.386 0C454.924 0 453.463 0 452.001 0C449.992 0 447.799 0 445.79 0C440.309 0 434.829 0 429.348 0C424.233 0 418.935 0 413.82 0C409.07 0 404.503 0 399.753 0C380.936 0 362.302 0.17801 343.486 0.356021C329.419 0.534031 315.352 0.712042 301.285 0.712042C295.074 0.712042 288.68 0.890052 282.468 1.06806C268.402 1.42408 254.335 1.60209 240.268 1.95812C236.249 1.95812 232.23 2.13613 228.211 2.13613C225.836 2.13613 223.643 2.31414 221.268 2.31414C207.384 2.84817 193.5 3.3822 179.616 3.91623C175.414 4.09424 171.212 4.27225 166.828 4.45026C164.453 4.45026 162.078 4.62827 159.703 4.80628C145.819 5.51832 132.118 6.23037 118.233 6.94241C111.109 7.29843 103.984 7.65445 96.8591 8.18848C84.6192 8.90052 72.3792 9.61256 60.3219 10.5026C49.7261 11.2147 39.1303 11.7487 28.5345 12.2827C26.8903 12.4607 25.2461 12.4607 23.4193 12.6387C20.679 12.8168 17.9387 12.8168 15.1984 12.9948C12.8234 13.7068 10.2658 13.7068 7.89092 13.7068C7.70823 12.9948 6.97749 12.4607 6.42943 12.6387C4.78525 12.6387 3.32376 12.8168 1.67958 12.9948C0.948839 13.1728 0.218094 13.5288 0.0354073 14.2408C-0.147279 15.1309 0.40078 16.0209 1.13152 16.199C1.86227 16.377 2.59301 16.555 3.32376 16.733C4.05451 16.911 4.60256 16.911 5.33331 16.911C7.16017 17.089 8.80435 17.089 10.6312 17.089ZM438.117 11.3927C440.309 11.3927 442.684 11.3927 444.876 11.3927C445.059 11.9267 445.425 12.2827 445.79 12.6387C444.876 12.6387 443.963 12.8168 443.232 12.8168C441.588 12.8168 439.944 12.9948 438.3 12.9948C430.992 13.1728 423.868 13.5288 416.56 13.7068C413.272 13.8848 409.983 14.0628 406.695 14.0628C401.58 14.0628 396.282 14.2408 391.167 14.2408C379.292 14.4188 367.6 14.5969 355.726 14.7749C332.707 15.1309 309.871 15.4869 286.853 15.8429C270.411 16.0209 253.969 16.555 237.528 17.089C212.865 17.801 188.02 18.3351 163.357 19.0471C158.424 19.2251 153.492 19.4031 148.559 19.7592C134.493 20.4712 120.426 21.0052 106.359 21.7173C92.6573 22.4293 78.7732 22.9634 65.0717 23.6754C63.7929 23.6754 62.5141 23.8534 61.2353 23.8534C64.889 23.4974 68.7254 23.3194 72.3792 22.9633C85.3499 22.0733 98.3206 21.0052 111.291 20.1152C115.859 19.7592 120.426 19.4031 124.81 19.0471C127.185 18.8691 129.56 18.6911 131.752 18.6911C145.454 17.9791 158.972 17.089 172.491 16.377C175.049 16.199 177.789 16.0209 180.347 15.8429C184.183 15.6649 188.02 15.4869 191.673 15.4869C205.557 14.9529 219.442 14.4188 233.326 13.8848C236.431 13.7068 239.537 13.7068 242.46 13.5288C243.191 13.5288 244.104 13.5288 244.835 13.5288C247.027 13.5288 249.219 13.5288 251.229 13.3508C265.113 12.9948 279.18 12.8168 293.064 12.4607C299.458 12.2827 305.852 12.1047 312.246 12.1047C332.89 11.9267 353.716 11.7487 374.36 11.5707C395.917 11.5707 417.108 11.3927 438.117 11.3927Z"
-                      fill="currentColor" />
-                  <path
-                      d="M38 42C38.5523 42 39 41.5523 39 41C39 40.4477 38.5523 40 38 40C37.4477 40 37 40.4477 37 41C37 41.5523 37.4477 42 38 42Z"
-                      fill="currentColor" />
-              </svg>
-
-              Fondateurs</span>
-      </h1>
+      <span class="relative inline-flex justify-center whitespace-nowrap font-bold">
+        Fondateurs</span>
+    </h1>
   </div>
-<section class="py-12 bg-white sm:py-16 lg:py-20 xl:py-24">
+  <section class="py-12 sm:py-16 lg:py-20 xl:py-24">
 
 
-  <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-      <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
-          <div class="flex flex-col sm:flex-row sm:items-center">
-              <img class="object-cover w-48 rounded-2xl -rotate-3" src="assets/images/4. Emmanuel Bardin + logo.png" alt="" />
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 ">
+      <div class="row d-flex  justify-center">
+        <div class="col-12 col-md-3  col-lg-2   flex flex-col items-center ">
+          <img class="object-cover w-48 rounded-2xl -rotate-3" src="assets/images/4. Emmanuel Bardin + logo.png"
+            alt="" />
 
-              <div class="mt-8 sm:mt-0 sm:ml-10">
-                  <p class="text-4xl font-semibold tracking-tight text-gray-900">Devon Lane</p>
-                  <p class="mt-3 text-xs font-semibold tracking-widest text-gray-900 uppercase">Co-Founder, CEO</p>
+          <div class="mt-8 sm:mt-0 sm:ml-10  text-center -translate-x-4">
+            <p class="text-4xl font-semibold tracking-tight text-gray-900">Devon Lane</p>
+            <p class="mt-3 text-xs font-semibold tracking-widest text-gray-900 uppercase">Co-Founder, CEO</p>
 
-                  <div class="mt-8">
-                      <a href="#" title="" class="inline-flex items-center text-sm font-semibold text-blue-600 transition-all duration-200 group hover:text-blue-800 hover:underline">
-                          suibre sur  Twitter
-                          <svg class="w-5 h-5 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                              <line x1="7" y1="17" x2="17" y2="7"></line>
-                              <polyline points="7 7 17 7 17 17"></polyline>
-                          </svg>
-                      </a>
-                  </div>
-              </div>
+            <div class="mt-8">
+              <a href="#" title=""
+                lass="inline-flex items-center text-sm font-semibold text-blue-600 transition-all duration-200 group hover:text-blue-800 hover:underline">
+                suibre sur Twitter
+              </a>
+            </div>
           </div>
 
-          <div class="flex flex-col sm:flex-row sm:items-center">
-              <img class="object-cover w-48 rounded-2xl -rotate-1" src="assets/images/6. Augustin Jaclin + logo.png" alt="" />
 
-              <div class="mt-8 sm:mt-0 sm:ml-10">
-                  <p class="text-4xl font-semibold tracking-tight text-gray-900">Floyd Miles</p>
-                  <p class="mt-3 text-xs font-semibold tracking-widest text-gray-900 uppercase">Co-Founder, CTO</p>
 
-                  <div class="mt-8">
-                      <a href="#" title="" class="inline-flex items-center text-sm font-semibold text-blue-600 transition-all duration-200 group hover:text-blue-800 hover:underline">
-                          suivre sur Twitter
-                          <svg class="w-5 h-5 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                              <line x1="7" y1="17" x2="17" y2="7"></line>
-                              <polyline points="7 7 17 7 17 17"></polyline>
-                          </svg>
-                      </a>
-                  </div>
-              </div>
+        </div>
+        <div class="col-12 col-md-3  col-lg-2   flex flex-col items-center ">
+          <img class="object-cover w-48 rounded-2xl -rotate-3" src="assets/images/4. Emmanuel Bardin + logo.png"
+            alt="" />
+
+          <div class="mt-8 sm:mt-0 sm:ml-10  text-center -translate-x-4">
+            <p class="text-4xl font-semibold tracking-tight text-gray-900">Devon Lane</p>
+            <p class="mt-3 text-xs font-semibold tracking-widest text-gray-900 uppercase">Co-Founder, CEO</p>
+
+            <div class="mt-8">
+              <a href="#" title=""
+                lass="inline-flex items-center text-sm font-semibold text-blue-600 transition-all duration-200 group hover:text-blue-800 hover:underline">
+                suibre sur Twitter
+              </a>
+            </div>
           </div>
+
+
+
+        </div>
+
+        <div class="col-12 col-md-3  col-lg-2   flex flex-col items-center ">
+          <img class="object-cover w-48 rounded-2xl -rotate-3" src="assets/images/4. Emmanuel Bardin + logo.png"
+            alt="" />
+
+          <div class="mt-8 sm:mt-0 sm:ml-10  text-center -translate-x-4">
+            <p class="text-4xl font-semibold tracking-tight text-gray-900">Devon Lane</p>
+            <p class="mt-3 text-xs font-semibold tracking-widest text-gray-900 uppercase">Co-Founder, CEO</p>
+
+            <div class="mt-8">
+              <a href="#" title=""
+                lass="inline-flex items-center text-sm font-semibold text-blue-600 transition-all duration-200 group hover:text-blue-800 hover:underline">
+                suibre sur Twitter
+              </a>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
 
 
-<!-- // founder finish  -->
+  <!-- // founder finish  -->

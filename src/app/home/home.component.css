@@ -1,3 +1,17 @@
 .logo{
 width:100px;
 }
+
+
+.bg-primary{
+background-color: #069B3E!important;
+}
+
+.bg-secondary{
+  background-color: #FFCC07!important;
+  }
+
+
+.text-green-primary{
+color: #069B3E!important;
+}
