@@ -25,6 +25,7 @@ import { ConditionalExpr } from '@angular/compiler';
 })
 export class AcceuilComponent implements OnInit {
   displays: any;
+  cycle: any;
   modalRef: any;
   closeResult = '';
   id: any;
@@ -47,7 +48,13 @@ export class AcceuilComponent implements OnInit {
   ngOnInit(): void {
     this.service.getAll().subscribe((chris: any) => {
       this.displays = chris.data;
-      console.log(this.displays);
+      // console.log(this.displays)
+
+      // this.service.getParam().subscribe((chris1:any)=>{
+      //   console.log(chris1)
+      // })
+
+      // console.log(this.displays);
     });
 
     // this.service.getAll('6,5,7,8').subscribe((chris: any) => {
@@ -76,5 +83,8 @@ export class AcceuilComponent implements OnInit {
     this.modalRef.componentInstance.img = show.image1;
     this.modalRef.componentInstance.pdfLink = show.pdf;
     this.modalRef.componentInstance.interdit = show.interdits;
+    this.modalRef.componentInstance.img2 = show.image2;
+    this.modalRef.componentInstance.text = show.text2;
+    this.modalRef.componentInstance.image_cycle = show.image_cycle;
   }
 }

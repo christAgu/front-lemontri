@@ -1,8 +1,6 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 
-
-
 import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -16,6 +14,7 @@ export class ModalComponent implements OnInit {
   @Input() text: any;
   @Input() pdfLink: any;
   @Input() img: any;
+
   @Input() text1: any;
   @Input() detail: any;
   @Input() interdit: any;
@@ -23,10 +22,7 @@ export class ModalComponent implements OnInit {
   @Input() img2: any;
   @Input() titrecycle: any;
   @Input() image_cycle: any;
-
   @Input() cycle: any;
-
-
 
   ngOnInit(): void {}
 }
