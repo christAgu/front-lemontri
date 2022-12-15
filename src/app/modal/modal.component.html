@@ -21,16 +21,19 @@
   </button>
 </div>
 <div class="card-body modal-body">
-  <img
-    src="{{ 'https://lemontri.tismatek.com//storage/' + img }}"
-    alt=""
-    srcset=""
-  />
-  <p>
-    <strong
-      ><span class="text-primary">{{ text }}</span></strong
-    >
-  </p>
+  <div class=" d-flex flex-col flex-lg-row justify-content-center ">
+    <div class="d-flex flex-col align-items-center">
+      <img src="{{ 'https://lemontri.tismatek.com//storage/' + img }}" alt=""srcset=""class="imgModal" />
+      <p><strong><span class="text-primary">{{ text }}</span></strong></p>
+    </div>
+    <div *ngIf="text2 != null ;" class="d-flex flex-col align-items-center">
+      <img src="{{ 'https://lemontri.tismatek.com//storage/' + img2 }}" alt=""srcset="" class="imgModal"/>
+      <p><strong><span class="text-primary">{{ text2 }}</span></strong></p>
+    </div>
+
+  
+  </div>
+
   <p>
     {{ interdit }}
     <span class="text-danger">.</span>

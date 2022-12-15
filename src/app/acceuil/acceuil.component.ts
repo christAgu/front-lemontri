@@ -79,13 +79,14 @@ export class AcceuilComponent implements OnInit {
   open(show: any) {
     this.modalRef = this.modalService.open(ModalComponent, {
       centered: true,
+      size: 'xl'
     });
     this.modalRef.componentInstance.text = show.text1;
     this.modalRef.componentInstance.img = show.image1;
     this.modalRef.componentInstance.pdfLink = show.pdf;
     this.modalRef.componentInstance.interdit = show.interdits;
     this.modalRef.componentInstance.img2 = show.image2;
-    this.modalRef.componentInstance.text = show.text2;
+    this.modalRef.componentInstance.text2 = show.text2;
     this.modalRef.componentInstance.image_cycle = show.cycle.image;
   }
 }
