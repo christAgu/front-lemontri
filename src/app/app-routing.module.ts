@@ -4,16 +4,12 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-
-
-
-
   {
     path: '',
     component: HomeComponent,
   },
   {
-    path: 'accueil',
+    path: 'consign',
     component: AcceuilComponent,
   },
 

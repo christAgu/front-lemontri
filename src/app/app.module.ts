@@ -21,8 +21,6 @@ import { FoundersComponent } from './founders/founders.component';
     ModalComponent,
     MiddleComponent,
     FoundersComponent,
-   
-
   ],
   imports: [
     BrowserModule,

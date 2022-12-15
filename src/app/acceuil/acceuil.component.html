@@ -45,9 +45,10 @@
 
 
   <div class="container mx-auto">
-    <div class="flex flex-row justify-between">
-      <div class="card w-1/6" style="cursor: pointer;" (click)="open(show)" *ngFor="let show of displays">
-        <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
+    <div class="flex flex-row justify-between row">
+      <div class=" col-6 col-lg-4" style="cursor: pointer;" (click)="open(show)" *ngFor="let show of displays">
+        <article class="card rounded-xl bg-white p-3 shadow-lg hover:shadow-xl ">
+
             <div class="relative flex items-end overflow-hidden rounded-xl">
 
               <img src='{{ "https://lemontri.tismatek.com//storage/" + show.displayable_image}}' alt="" srcset="">
@@ -61,8 +62,6 @@
                 <span class="text-slate-400 ml-1 text-sm">4.9</span>
               </div>
             </div>
-
-            
 
             <div class="mt-1 p-2">
               <h2 class="text-slate-700"></h2>
