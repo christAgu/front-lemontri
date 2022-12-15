@@ -1,31 +1,67 @@
 <div class="modal-header">
-  <h4 class="modal-title" id="modal-title">Détail</h4>
-  <button type="button" class="btn-close bg-warning" aria-describedby="modal-title"
-    (click)="modal.dismiss('Cross click')"> x</button>
+  <h4 class="modal-title" id="modal-title">Consigne Détail</h4>
+  <button
+    type="button"
+    class="btn-close bg-warning"
+    aria-describedby="modal-title"
+    (click)="modal.dismiss('Cross click')"
+  >
+    <svg
+      clip-rule="evenodd"
+      fill-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="2"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"
+      />
+    </svg>
+  </button>
 </div>
 <div class="card-body modal-body">
-  <img src='{{ "https://lemontri.tismatek.com//storage/" + img}}' alt="" srcset="">
+  <img
+    src="{{ 'https://lemontri.tismatek.com//storage/' + img }}"
+    alt=""
+    srcset=""
+  />
   <p>
-    <strong><span class="text-primary">{{text}}</span></strong>
+    <strong
+      ><span class="text-primary">{{ text }}</span></strong
+    >
   </p>
   <p>
-    {{interdit}}
+    {{ interdit }}
     <span class="text-danger">.</span>
   </p>
   <p>
-    <strong><span class="text-primary">{{text}}</span></strong>
+    <strong
+      ><span class="text-primary">{{ text }}</span></strong
+    >
+  </p>
 
- 
-
-  <img src='{{ "https://lemontri.tismatek.com//storage/" + image_cycle}}' alt="" srcset="">
-
-
+  <div *ngIf="cycleVerifClick === true; then bloc1"></div>
+  <ng-template #bloc1>
+    <img
+      src="{{ 'https://lemontri.tismatek.com//storage/' + image_cycle }}"
+      alt=""
+      srcset=""
+    />
+  </ng-template>
 </div>
-
 
 <div class="modal-footer">
   <!-- <button type="button" class="btn btn-outline-secondary" (click)="modal.dismiss('cancel click')">Télécharger pdf</button> -->
-  <button type="button" class="btn btn-warning" (click)="modal.close('Ok click')">En savoir plus </button>
-  <a class="type=" button class="btn btn-warning" href="{{ 'https://lemontri.tismatek.com//storage/' + pdfLink}}"
-    target="_blank">chriffre clés</a>
+  <button type="button" class="btn btn-warning" (click)="openCycle()" *ngIf="cycleVerifClick === false; ">
+    Cycle de recyclage
+  </button>
+  <a
+    class="type="
+    button
+    class="btn btn-warning"
+    href="{{ 'https://lemontri.tismatek.com//storage/' + pdfLink }}"
+    target="_blank"
+    >chriffre clés</a
+  >
 </div>

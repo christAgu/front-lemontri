@@ -9,6 +9,7 @@ import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./modal.component.css'],
 })
 export class ModalComponent implements OnInit {
+  cycleVerifClick:boolean = false;
   constructor(public modal: NgbActiveModal) {}
 
   @Input() text: any;
@@ -25,4 +26,10 @@ export class ModalComponent implements OnInit {
   @Input() cycle: any;
 
   ngOnInit(): void {}
+
+  openCycle() {
+    this.cycleVerifClick = true;
+  }
+
+
 }

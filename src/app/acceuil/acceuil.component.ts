@@ -41,8 +41,9 @@ export class AcceuilComponent implements OnInit {
     private modalService: NgbModal,
     private route: ActivatedRoute
   ) {
-    config.backdrop = 'static';
+    // config.backdrop = 'static';
     config.keyboard = false;
+    config.scrollable= true ;
   }
 
   ngOnInit(): void {
@@ -85,6 +86,6 @@ export class AcceuilComponent implements OnInit {
     this.modalRef.componentInstance.interdit = show.interdits;
     this.modalRef.componentInstance.img2 = show.image2;
     this.modalRef.componentInstance.text = show.text2;
-    this.modalRef.componentInstance.image_cycle = show.image_cycle;
+    this.modalRef.componentInstance.image_cycle = show.cycle.image;
   }
 }
