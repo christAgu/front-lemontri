@@ -14,10 +14,10 @@
             Retrouvez le guide et les l’ensemble des consignes de tri selon le flux </h2>
 
 
-          <a href="#consignAll" aria-label=""
+          <!-- <a href="#consignAll" aria-label=""
           class="inline-flex items-center font-semibold tracking-wider text-white transition-colors duration-200 hover:text-teal-300">
           Voir les consignes
-        </a>
+        </a> -->
         </div>
         <div class="relative col-12 col-lg-5">
           <img class="w-100 h-auto" src="https://lemontri.tismatek.com//storage/LEMON/18-min.png" alt="" />
@@ -33,8 +33,9 @@
 
 <section class="py-20" id="consignAll">
 
+  <h2 class="text-white text-center fw-bold text-4xl mb-3">Consigne</h2>
   <div class="container mx-auto">
-    <div class="flex flex-row justify-between row">
+    <div class="flex flex-row justify-center row">
       <div class=" col-6 col-lg-4" style="cursor: pointer;" (click)="open(show)" *ngFor="let show of displays">
         <article class="card rounded-xl bg-white p-3 shadow-lg hover:shadow-xl  mb-3">
 
